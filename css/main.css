@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
+  background-color: #dcdcdc;
+  color: #202846;
+  line-height: 1.6;
+}
+
+.header {
+  background-color: #202846;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav a {
+  color: white;
+  margin-left: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.intro {
+  background: url('../images/v109_5220.png') center/cover no-repeat;
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.mission {
+  background-color: #cacaca;
+  padding: 3rem 2rem;
+}
+
+.mission h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.footer {
+  background-color: #202846;
+  color: #eee;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lang-switch {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  .nav a {
+    margin: 0.5rem 0;
+  }
+
+  .intro, .mission {
+    padding: 2rem 1rem;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
